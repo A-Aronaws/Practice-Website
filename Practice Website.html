@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Inspection Reasons</title>
+        <meta name="keywords" content="inspections, list, home inspections, app">
+        <meta name="description" content="Home Inspection Company">
+    </head>
+    <script>
+    function handleCreatePost() {
+        document.getElementById("post-form-container").style.display= "block"
+    }
+    function hidePostForm() {
+            document.getElementById("post-form-container").style.display = "none"
+        }
+
+    </script>
+
+        <style>
+
+            body {
+                background-color: #d6e4ee;
+                margin: 0;
+            }
+            
+            a {
+               color: blue;
+               font-size: 10px;
+            }
+
+            #logo {
+                width: 50px;
+            }
+            
+            #article-cover {
+                width: 100%;
+            }
+            
+            .article-info {
+                color: grey;
+            }
+        
+            #main-section-container {
+                display: flex;
+                width: 80%;
+                margin: 15px auto;
+            }
+        
+            #header-wrapper {
+                background-color: white;
+            }
+        
+            #header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                width: 80%;
+                margin: auto;
+            }
+        
+            #logo-search-container {
+                display: flex;
+            }
+        
+            #header input {
+                margin-left: 10px;
+                font-size: 18px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid lightgrey;
+                width: 300px;
+            }
+        
+            #article-section-container {
+                width: 70%;
+                background-color: white;
+            }
+            #article-section-container div {
+                padding: 5px 15px 0px 15px;
+            }
+            #side-section {
+                width: 30%;
+                margin-left: 15px;
+            }
+            #side-section div {
+                background-color: white;
+                padding: 5px 15px 20px 20px;
+                margin-bottom: 15px;
+            }
+            #footer {
+                background-color: white;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        
+            button {
+                font-size: 18px;
+                padding: 10px 20px;
+                color: blue;
+                border: 1px solid blue; 
+                border-radius: 5px;
+                background-color: white;
+            }
+            
+            #hide-btn {
+                color: darkred;
+                border: 1px solid darkred;
+            }
+
+            #save-btn {
+                color: darkcyan;
+                border: 1px solid darkcyan;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+            #post-form-container {
+                max-width: 300px;
+                padding: 10px;
+                margin: auto;
+                display: none
+            }
+            
+            #post-form-container input, textarea{
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0 20px 0;
+
+            }
+
+
+        </style>
+        
+<body>
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo-search-container">
+                <img id="logo" src="https://images.squarespace-cdn.com/content/v1/62d980821630044a68295ee6/00169b99-49dc-4460-a407-d125786f7081/logo-original-1000.jpg?format=1500w" style="margin-block: auto;">
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <button id="show-btn" onclick="handleCreatePost()">Create Post</button>
+            </div>
+        </div>
+
+    <div id="post-form-container">
+        <form>
+            <label><b>Title</b></label>
+            <input type="text" name="title" placeholder="Enter Title">
+            
+            <label><b>Discription</b></label>
+            <input type="text" placeholder="Description">
+            
+            <label><b>Post</b></label>
+            <textarea placeholder="Your post..."></textarea>
+            <button id="save-btn" onclick=savePost()>Save post</button>
+            <button id="hide-btn" onclick=hidePostForm()>Hide form</button>
+        </form>
+    </div>
+
+    <div id="main-section-container">
+        <div id="article-section-container">
+            <img id="article-cover" src="https://resources.buffiniandcompany.com/wp-content/uploads/2020/06/Do_You_Need_Inspection_Featured_1024x576.jpg"/>
+            <div>
+                <h1>The Importance of Home Inspections</h1>
+                <h3>This article gives prudent information on reasons to get your property inspected.</h3>
+                <p class="article-info"><i>written by: Aaron S</i></p>
+                <p class="article-info"><i>date: 1/19/2024</i></p>
+            </div>
+
+            <div>
+                <p>Regular home inspections are a crucial investment in the well-being of your residence. By detecting potential issues early, inspections prevent minor problems from turning into major, costly repairs. Covering structural integrity, electrical systems, plumbing, and safety, inspections offer a comprehensive assessment. This proactive approach not only safeguards your investment but also protects your family's health by identifying hidden problems like mold or water damage.</p>
+                <p>Additionally, a well-documented inspection report enhances property value, aiding in negotiations and attracting confident buyers. In conclusion, scheduling a home inspection today is a smart move that pays off by preserving your property and ensuring a safe living environment.</p>
+
+                <h4>section header</h4>
+                <p>paragraph 1</p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="side-section">
+            <div>
+                <h2>Side section</h2>
+                <h3>Another article title</h3>
+                <h4>Another article short info</h4>
+                <a href="https://www.fredericksburghomeinspectors.com/">Click to see article</a>
+            </div>
+
+            <div>
+                <h2>Also Side section</h2>
+                <h3>article title</h3>
+                <h4>short description</h4>
+                <a href="https://www.fredericksburghomeinspectors.com/">Click to see article</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>This is the footer</p>
+    </div>
+</body>
+
+
